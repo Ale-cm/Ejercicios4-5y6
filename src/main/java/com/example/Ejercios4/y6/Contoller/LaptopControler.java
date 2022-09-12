@@ -34,7 +34,7 @@ return "hola laptop";
   return laptopOpt.orElse(null);
  }
 
- @PostMapping("/delete/{id}")
+ @DeleteMapping("/delete/{id}")
  public void deleteById(@PathVariable("id") Long id){
   this.laptopRepository.deleteById(id);
  }
